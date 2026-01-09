@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaEduCalc - Calculate Your Grades Easily</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-[rgb(254,255,239)] flex flex-col">
+    <div class="min-h-screen flex-1">
+        <nav class="py-10 lg:px-30 md:px-10 px-5 flex flex-col md:gap-5 gap-4">
+            <a href="index.html">
+                <div class=" flex items-center md:gap-3 gap-2">
+                    <i
+                        class="bi bi-mortarboard lg:text-[1.6em] md:text-[1.5em] text-white bg-[rgb(27,67,50)] md:px-3 md:py-1 px-3 py-2 rounded-[7px] "></i>
+                    <h3 class="text-[rgb(27,67,50)] lg:text-[1.5em] md:text-[1.3em] text-[1.2em] font-bold ">
+                        NaijaEduCalc
+                    </h3>
+                </div>
+            </a>
+            <div class="flex items-center md:gap-4 gap-3">
+                <a class="text-[rgba(27,67,50,.8)] hover:text-[rgba(27,67,50)] font-semibold" href="index.html">Home</a>
+                <span class="text-[rgba(27,67,50)]">/</span>
+                <p class="text-[rgba(27,67,50)] font-semibold">University</p>
+            </div>
+        </nav>
+
+        <!--                                            Hero Section -->
+        <section class="px-5 text-center ">
+            <h1
+                class="text-[rgba(27,67,50)] font-bold xl:text-[2.6em] lg:text-[2.4em] md:text-[2em] text-[1.5em] lg:w-[40%] md:w-[65%] w-full lg:leading-[45px] md:leading-[35px] leading-[30px] mx-auto ">
+                University CGPA Class Checker</h1>
+            <p class="text-gray-600 lg:text-[1.3em] text-[1em]  mx-auto md:mt-4 mt-3  ">Enter your CGPA below to find out your degree class and understand where you stand academically.</p>
+        </section>
+
+        <div class="mx-5 md:mx-7">
+            <div
+                class="shadow-md w-full md:w-[700px] bg-white flex flex-col mx-auto justify-center mx-5 mt-10 mt-10 py-7 md:px-7 px-4 rounded-[15px]">
+
+                <label class="text-[1em] font-semibold" for="uniGPA">Enter CGPA (0.0 - 5.0)</label>
+                <input
+                    class="border w-full md:mt-3 mt-1 mb-4 px-3 sm:py-2 py-1 rounded-[7px] focus:outline-[rgb(184,134,11)] "
+                    type="number" placeholder="e.g. 3.5" id="uniGPA">
+
+
+                <div id="result">
+                    <p id="gradeClass"
+                        class="text-gray-600 mt-2 font-semibold text-center text-[1.2em] md:text-[1.3em] "></p>
+                </div>
+
+                <button onclick="universityGrade()"
+                    class="bg-[rgb(184,134,11)] font-semibold py-2 lg:text-[1.05em] text-[1em] text-white rounded-[7px] w-full cursor-pointer hover:bg-[rgb(184,118,11)] duration-200 mt-5">View
+                    Degree Class</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="text-center px-5 md:px-10 py-5 text-[.9em] md:text-[1em] border-t border-gray-300 text-gray-600">
+        <p>Grading systems may vary slightly between schools. Always check your institution’s handbook.</p>
+        <p class="mt-2">&copy; 2026 NaijaEduCalc. Designed for Nigerian Students.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

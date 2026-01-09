@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaEduCalc - Calculate Your Grades Easily</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-[rgb(254,255,239)]">
+    <nav class="py-10 lg:px-30 md:px-10 px-5 flex flex-col md:gap-5 gap-4">
+        <a href="#">
+            <div class=" flex items-center md:gap-3 gap-2">
+                <i
+                    class="bi bi-mortarboard lg:text-[1.6em] md:text-[1.5em] text-white bg-[rgb(27,67,50)] md:px-3 md:py-1 px-3 py-2 rounded-[7px] "></i>
+                <h3 class="text-[rgb(27,67,50)] lg:text-[1.5em] md:text-[1.3em] text-[1.2em] font-bold ">NaijaEduCalc
+                </h3>
+            </div>
+        </a>
+        <div class="flex items-center md:gap-4 gap-3">
+            <a class="text-[rgba(27,67,50,.8)] hover:text-[rgba(27,67,50)] font-semibold" href="#">Home</a> <span
+                class="text-[rgba(27,67,50)]">/</span>
+            <p class="text-[rgba(27,67,50)] font-semibold">Select Level</p>
+        </div>
+    </nav>
+
+    <!--                                            Hero Section -->
+    <section class="px-5 md:pt-10 pt-0 text-center ">
+        <h1
+            class="text-[rgba(27,67,50)] font-bold xl:text-[2.1em] lg:text-[1.9em] md:text-[1.7em] text-[1.3em] lg:w-[40%] md:w-[65%] w-full lg:leading-[45px] md:leading-[35px] leading-[25px] mx-auto uppercase ">
+            Check your grades and degree class without stress</h1>
+        <p class="text-gray-600 lg:text-[1.2em] text-[1em] lg:w-[50%] md:w-[75%] w-full mx-auto md:mt-2 mt-3  ">Quickly check your grade or degree class using Nigeria’s standard grading systems. Simple, fast, and accurate.</p>
+    </section>
+
+    <!--                                            Card Section -->
+    <section
+        class="xl:px-60 xl:py-20 lg:px-20 px-10 md:py-20 py-15 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-5 ">
+        <a href="secondarySchool.html">
+            <div
+                class="border border-gray-200 hover:translate-y-[-7px] h-full duration-400 rounded-[10px] shadow-md cursor-pointer bg-white py-7 md:px-7 px-4 text-center ">
+                <i
+                    class="bi bi-book text-[2.4em] px-4 py-2 bg-[rgb(240,253,244)] text-[rgb(42,80,63)] rounded-full "></i>
+                <h3 class="md:text-[1.4em] text-[1.3em] font-bold text-[rgb(27,67,50)] mt-5 ">Secondary School</h3>
+                <p class=" lg:text-[1.05em] text-[1em] mt-3 text-gray-600 leading-[20px]">Enter your exam score to see
+                    the correct WAEC or NECO grade it falls under. Simple and accurate.</p>
+                <button
+                    class="bg-[rgb(184,134,11)] font-semibold py-2 lg:text-[1.05em] text-[1em] text-white rounded-[7px] w-[90%] cursor-pointer hover:bg-[rgb(184,118,11)] duration-200 mt-5">Start
+                    Calculation</button>
+            </div>
+        </a>
+
+        <a href="polytechnics.html">
+            <div
+                class="border border-gray-200 hover:translate-y-[-7px] h-full duration-400 rounded-[10px] shadow-md cursor-pointer bg-white py-7 md:px-7 px-4 text-center ">
+                <i
+                    class="bi bi-calculator text-[2.4em] px-4 py-2 bg-[rgb(240,253,244)] text-[rgb(42,80,63)] rounded-full "></i>
+                <h3 class="md:text-[1.4em] text-[1.3em] font-bold text-[rgb(27,67,50)] mt-5 ">Polytechnic</h3>
+                <p class=" lg:text-[1.05em] text-[1em] mt-3 text-gray-600 leading-[20px]">Enter your CGPA to find out if you’re on Distinction, Upper Credit, or Pass.</p>
+                <button
+                    class="bg-[rgb(184,134,11)] font-semibold py-2 lg:text-[1.05em] text-[1em] text-white rounded-[7px] w-[90%] cursor-pointer hover:bg-[rgb(184,118,11)] duration-200 mt-5">Start
+                    Calculation</button>
+            </div>
+        </a>
+
+        <a href="universities.html">
+            <div
+                class="border border-gray-200 hover:translate-y-[-7px] h-full duration-400 rounded-[10px] shadow-md cursor-pointer bg-white py-7 md:px-7 px-4 text-center ">
+                <i
+                    class="bi bi-award text-[2.4em] px-4 py-2 bg-[rgb(240,253,244)] text-[rgb(42,80,63)] rounded-full "></i>
+                <h3 class="md:text-[1.4em] text-[1.3em] font-bold text-[rgb(27,67,50)] mt-5 ">University</h3>
+                <p class=" lg:text-[1.05em] text-[1em] mt-3 text-gray-600 leading-[20px]">Input your CGPA and instantly see your degree class..</p>
+                <button
+                    class="bg-[rgb(184,134,11)] font-semibold py-2 lg:text-[1.05em] text-[1em] text-white rounded-[7px] w-[90%] cursor-pointer hover:bg-[rgb(184,118,11)] duration-200 mt-5">Start
+                    Calculation</button>
+            </div>
+        </a>
+    </section>
+
+    <footer
+        class="text-center px-5 md:px-10 py-5 text-[.9em] md:text-[1em] border border-top border-gray-300 text-gray-600">
+        <p>Grading systems may vary slightly between schools. Always check your institution’s handbook.</p>
+        <p class="mt-2">&copy; 2026 NaijaEduCalc. Designed for Nigerian Students.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
